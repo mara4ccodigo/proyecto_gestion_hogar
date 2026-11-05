@@ -1,0 +1,36 @@
+Proyecto App Documentación
+==========================
+
+Bienvenido a la documentación del Proyecto App.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contenidos:
+
+   app_gestion2
+   db_manager
+   movimiento
+   modelo_usuario
+
+Funciones y Clases
+==================
+
+.. automodule:: app_gestion2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: db_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: movimiento
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: modelo_usuario
+   :members:
+   :undoc-members:
+   :show-inheritance:

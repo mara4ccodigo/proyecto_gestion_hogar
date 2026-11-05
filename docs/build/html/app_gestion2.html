@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>app_gestion2 module &mdash; documentación de proyecto_app - 0.1</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9c9b61ad"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="constantes module" href="constantes.html" />
+    <link rel="prev" title="Proyecto App Documentación" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            proyecto_app
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos de los Módulos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">app_gestion2 module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#app_gestion2.AppGestion"><code class="docutils literal notranslate"><span class="pre">AppGestion</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.autoformatear_fecha_entry"><code class="docutils literal notranslate"><span class="pre">AppGestion.autoformatear_fecha_entry()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.cerrar_sesion"><code class="docutils literal notranslate"><span class="pre">AppGestion.cerrar_sesion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.controlar_evento_categoria"><code class="docutils literal notranslate"><span class="pre">AppGestion.controlar_evento_categoria()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.controlar_evento_subcategoria"><code class="docutils literal notranslate"><span class="pre">AppGestion.controlar_evento_subcategoria()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.ejecutar_cerrar_sesion"><code class="docutils literal notranslate"><span class="pre">AppGestion.ejecutar_cerrar_sesion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.ejecutar_eliminacion_seguro"><code class="docutils literal notranslate"><span class="pre">AppGestion.ejecutar_eliminacion_seguro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.ejecutar_guardado_seguro"><code class="docutils literal notranslate"><span class="pre">AppGestion.ejecutar_guardado_seguro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.ejecutar_limpieza_formulario"><code class="docutils literal notranslate"><span class="pre">AppGestion.ejecutar_limpieza_formulario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.ejecutar_modificacion_importe_seguro"><code class="docutils literal notranslate"><span class="pre">AppGestion.ejecutar_modificacion_importe_seguro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.eliminar_movimiento"><code class="docutils literal notranslate"><span class="pre">AppGestion.eliminar_movimiento()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.guardar_movimiento"><code class="docutils literal notranslate"><span class="pre">AppGestion.guardar_movimiento()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.iniciar"><code class="docutils literal notranslate"><span class="pre">AppGestion.iniciar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.login_correcto"><code class="docutils literal notranslate"><span class="pre">AppGestion.login_correcto()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.modificar_importe"><code class="docutils literal notranslate"><span class="pre">AppGestion.modificar_importe()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.mostrar_principal"><code class="docutils literal notranslate"><span class="pre">AppGestion.mostrar_principal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.obtener_categorias"><code class="docutils literal notranslate"><span class="pre">AppGestion.obtener_categorias()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.obtener_lista_movimientos"><code class="docutils literal notranslate"><span class="pre">AppGestion.obtener_lista_movimientos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.obtener_propiedades"><code class="docutils literal notranslate"><span class="pre">AppGestion.obtener_propiedades()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.obtener_subcategorias"><code class="docutils literal notranslate"><span class="pre">AppGestion.obtener_subcategorias()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.obtener_subsubcategorias"><code class="docutils literal notranslate"><span class="pre">AppGestion.obtener_subsubcategorias()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.procesar_ingreso"><code class="docutils literal notranslate"><span class="pre">AppGestion.procesar_ingreso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.procesar_registro"><code class="docutils literal notranslate"><span class="pre">AppGestion.procesar_registro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#app_gestion2.AppGestion.refrescar_tabla_interfaz"><code class="docutils literal notranslate"><span class="pre">AppGestion.refrescar_tabla_interfaz()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="constantes.html">constantes module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constantes.html#constantes.CONTRASENIA_SISTEMA"><code class="docutils literal notranslate"><span class="pre">CONTRASENIA_SISTEMA</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="db_manager.html">db_manager module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="db_manager.html#db_manager.DBManager"><code class="docutils literal notranslate"><span class="pre">DBManager</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.actualizar_importe"><code class="docutils literal notranslate"><span class="pre">DBManager.actualizar_importe()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.configurar_base_datos"><code class="docutils literal notranslate"><span class="pre">DBManager.configurar_base_datos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.eliminar_movimiento"><code class="docutils literal notranslate"><span class="pre">DBManager.eliminar_movimiento()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.gestionar_conexion"><code class="docutils literal notranslate"><span class="pre">DBManager.gestionar_conexion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.insertar_movimiento"><code class="docutils literal notranslate"><span class="pre">DBManager.insertar_movimiento()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.insertar_usuario"><code class="docutils literal notranslate"><span class="pre">DBManager.insertar_usuario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.obtener_movimientos"><code class="docutils literal notranslate"><span class="pre">DBManager.obtener_movimientos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="db_manager.html#db_manager.DBManager.obtener_usuario"><code class="docutils literal notranslate"><span class="pre">DBManager.obtener_usuario()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modelo_usuario.html">modelo_usuario module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modelo_usuario.html#modelo_usuario.Usuario"><code class="docutils literal notranslate"><span class="pre">Usuario</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelo_usuario.html#modelo_usuario.Usuario.existe_en_bd"><code class="docutils literal notranslate"><span class="pre">Usuario.existe_en_bd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelo_usuario.html#modelo_usuario.Usuario.registrar"><code class="docutils literal notranslate"><span class="pre">Usuario.registrar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelo_usuario.html#modelo_usuario.Usuario.validar"><code class="docutils literal notranslate"><span class="pre">Usuario.validar()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="movimiento.html">movimiento module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="movimiento.html#movimiento.Movimiento"><code class="docutils literal notranslate"><span class="pre">Movimiento</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.actualizar_importe"><code class="docutils literal notranslate"><span class="pre">Movimiento.actualizar_importe()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.eliminar"><code class="docutils literal notranslate"><span class="pre">Movimiento.eliminar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.guardar"><code class="docutils literal notranslate"><span class="pre">Movimiento.guardar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.obtener_todos"><code class="docutils literal notranslate"><span class="pre">Movimiento.obtener_todos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.validar"><code class="docutils literal notranslate"><span class="pre">Movimiento.validar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.validar_fecha"><code class="docutils literal notranslate"><span class="pre">Movimiento.validar_fecha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movimiento.html#movimiento.Movimiento.validar_importe"><code class="docutils literal notranslate"><span class="pre">Movimiento.validar_importe()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="movimiento.html#movimiento.ejemplo_docstring"><code class="docutils literal notranslate"><span class="pre">ejemplo_docstring()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vista_login.html">vista_login module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vista_login.html#vista_login.VentanaLogin"><code class="docutils literal notranslate"><span class="pre">VentanaLogin</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vista_principal.html">vista_principal module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vista_principal.html#vista_principal.VentanaPrincipal"><code class="docutils literal notranslate"><span class="pre">VentanaPrincipal</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vista_principal.html#vista_principal.VentanaPrincipal.cargar_datos_seleccionados_en_formulario"><code class="docutils literal notranslate"><span class="pre">VentanaPrincipal.cargar_datos_seleccionados_en_formulario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="vista_principal.html#vista_principal.VentanaPrincipal.cargar_importe_seleccionado_en_campo"><code class="docutils literal notranslate"><span class="pre">VentanaPrincipal.cargar_importe_seleccionado_en_campo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="vista_principal.html#vista_principal.VentanaPrincipal.refrescar_tabla"><code class="docutils literal notranslate"><span class="pre">VentanaPrincipal.refrescar_tabla()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">proyecto_app</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">app_gestion2 module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/app_gestion2.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-app_gestion2">
+<span id="app-gestion2-module"></span><h1>app_gestion2 module<a class="headerlink" href="#module-app_gestion2" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">app_gestion2.</span></span><span class="sig-name descname"><span class="pre">AppGestion</span></span><a class="headerlink" href="#app_gestion2.AppGestion" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase principal que controla la aplicación de gestión.
+Gestiona la interfaz de usuario, la conexión con la base de datos,
+operacione CRUD y el flujo de inicio y cierre de sesión.</p>
+<dl class="simple">
+<dt>Atributos:</dt><dd><p>ventana_login (tk.Tk): Ventana de login.
+ventana_principal (tk.Tk): Ventana principal de la aplicación.
+db (DBManager): Instancia para manejo de la base de datos.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.autoformatear_fecha_entry">
+<span class="sig-name descname"><span class="pre">autoformatear_fecha_entry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.autoformatear_fecha_entry" title="Link to this definition"></a></dt>
+<dd><p>Autoformatea</p>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Al teclear en la entrada, se insertan automáticamente</span>
+<span class="go">los '/' en posiciones correctas.</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.cerrar_sesion">
+<span class="sig-name descname"><span class="pre">cerrar_sesion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.cerrar_sesion" title="Link to this definition"></a></dt>
+<dd><p>Cierra la sesión actual y vuelve a mostrar la ventana de login.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.controlar_evento_categoria">
+<span class="sig-name descname"><span class="pre">controlar_evento_categoria</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combo_categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subsubcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_vencimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_pago</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.controlar_evento_categoria" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.controlar_evento_subcategoria">
+<span class="sig-name descname"><span class="pre">controlar_evento_subcategoria</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combo_categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subsubcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_vencimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_pago</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.controlar_evento_subcategoria" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.ejecutar_cerrar_sesion">
+<span class="sig-name descname"><span class="pre">ejecutar_cerrar_sesion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ventana</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.ejecutar_cerrar_sesion" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.ejecutar_eliminacion_seguro">
+<span class="sig-name descname"><span class="pre">ejecutar_eliminacion_seguro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tabla</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_filtro_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_gasto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.ejecutar_eliminacion_seguro" title="Link to this definition"></a></dt>
+<dd><p>Elimina un movimiento seleccionado tras confirmar
+con el usuario y refresca la tabla.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tabla</strong> (<em>ttk.Treeview</em>) – Tabla donde se selecciona el movimiento.</p></li>
+<li><p><strong>combo_filtro_propiedad</strong> (<em>ttk.Combobox</em>)</p></li>
+<li><p><strong>tabla.</strong> (<em>Combo filtro para refrescar</em>)</p></li>
+<li><p><strong>etiqueta_balance</strong> (<em>tk.Label</em>) – Etiqueta de total acumulado.</p></li>
+<li><p><strong>etiqueta_gasto</strong> (<em>tk.Label</em>) – Etiqueta de gasto mensual</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="o">.</span><span class="n">ejecutar_eliminacion_seguro</span>
+<span class="go">(tabla, combo_filtro, label_balance, label_gasto)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.ejecutar_guardado_seguro">
+<span class="sig-name descname"><span class="pre">ejecutar_guardado_seguro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combo_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subsubcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_importe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_vencimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_pago</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_comentarios</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_filtro_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabla</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_gasto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.ejecutar_guardado_seguro" title="Link to this definition"></a></dt>
+<dd><p>Recopila datos desde la interfaz y
+guarda un nuevo movimiento de forma segura,
+refrescando la tabla y totales</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>combo_propiedad</strong> (<em>ttk.Combobox</em>) – Campo propiedad.</p></li>
+<li><p><strong>combo_categoria</strong> (<em>ttk.Combobox</em>) – Campo categoría.</p></li>
+<li><p><strong>combo_subcategoria</strong> (<em>ttk.Combobox</em>) – Campo subcategoría.</p></li>
+<li><p><strong>combo_subsubcategoria</strong> (<em>ttk.Combobox</em>) – Campo sub-subcategoría.</p></li>
+<li><p><strong>entrada_importe</strong> (<em>tk.Entry</em>) – Campo importe.</p></li>
+<li><p><strong>entrada_vencimiento</strong> (<em>tk.Entry</em>) – Campo fecha vencimiento.</p></li>
+<li><p><strong>entrada_pago</strong> (<em>tk.Entry</em>) – Campo fecha pago</p></li>
+<li><p><strong>entrada_comentarios</strong> (<em>tk.Text</em>) – Campo comentarios.</p></li>
+<li><p><strong>combo_filtro_propiedad</strong> (<em>ttk.Combobox</em>)</p></li>
+<li><p><strong>tabla.</strong> (<em>Combo de filtro para refrescar</em>)</p></li>
+<li><p><strong>tabla</strong> (<em>ttk.Treeview</em>) – Tabla de movimientos.</p></li>
+<li><p><strong>etiqueta_balance</strong> (<em>tk.Label</em>) – Etiqueta de total acumulado.</p></li>
+<li><p><strong>etiqueta_gasto</strong> (<em>tk.Label</em>) – Etiqueta de gasto mensual.</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="o">.</span><span class="n">ejecutar_guardado_seguro</span><span class="p">(</span><span class="n">combo_propiedad</span><span class="p">,</span> <span class="n">combo_categoria</span><span class="p">,</span>
+<span class="go">combo_subcategoria, combo_subsubcategoria, entrada_importe,</span>
+<span class="go">entrada_vencimiento, entrada_pago, entrada_comentarios</span>
+<span class="go">combo_filtro_propiedad, tabla, etiqueta_balance, etiqueta_gasto)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.ejecutar_limpieza_formulario">
+<span class="sig-name descname"><span class="pre">ejecutar_limpieza_formulario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combo_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subsubcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_importe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_vencimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_pago</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_comentarios</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.ejecutar_limpieza_formulario" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.ejecutar_modificacion_importe_seguro">
+<span class="sig-name descname"><span class="pre">ejecutar_modificacion_importe_seguro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tabla</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_importe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_filtro_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_gasto</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">combo_subsubcategoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_vencimiento</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entrada_pago</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.ejecutar_modificacion_importe_seguro" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.eliminar_movimiento">
+<span class="sig-name descname"><span class="pre">eliminar_movimiento</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_mov</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.eliminar_movimiento" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.guardar_movimiento">
+<span class="sig-name descname"><span class="pre">guardar_movimiento</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.guardar_movimiento" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.iniciar">
+<span class="sig-name descname"><span class="pre">iniciar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.iniciar" title="Link to this definition"></a></dt>
+<dd><p>Inicia el flujo principal de la aplicación mostrando
+la ventana de login.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.login_correcto">
+<span class="sig-name descname"><span class="pre">login_correcto</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.login_correcto" title="Link to this definition"></a></dt>
+<dd><p>Lógica a ejecutar cuando el login es exitoso.</p>
+<p>Cierra ventana de login y abre ventana principal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.modificar_importe">
+<span class="sig-name descname"><span class="pre">modificar_importe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_mov</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nuevo_importe</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.modificar_importe" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.mostrar_principal">
+<span class="sig-name descname"><span class="pre">mostrar_principal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.mostrar_principal" title="Link to this definition"></a></dt>
+<dd><p>Muestra la ventana principal de la aplicación.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.obtener_categorias">
+<span class="sig-name descname"><span class="pre">obtener_categorias</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.obtener_categorias" title="Link to this definition"></a></dt>
+<dd><p>Obtiene la lista de categorías disponibles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Lista de categorías.</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.obtener_lista_movimientos">
+<span class="sig-name descname"><span class="pre">obtener_lista_movimientos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.obtener_lista_movimientos" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.obtener_propiedades">
+<span class="sig-name descname"><span class="pre">obtener_propiedades</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.obtener_propiedades" title="Link to this definition"></a></dt>
+<dd><p>Obtiene las opciones de las propiedades disponibles</p>
+<p>Returns: Lista de propiedades.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.obtener_subcategorias">
+<span class="sig-name descname"><span class="pre">obtener_subcategorias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">categoria</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.obtener_subcategorias" title="Link to this definition"></a></dt>
+<dd><p>Obtiene las subcategorías correspondientes a una categoría.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>categoria</strong> (<em>str</em>) – Nombre de la categoría seleccionada.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de subcategorías.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.obtener_subsubcategorias">
+<span class="sig-name descname"><span class="pre">obtener_subsubcategorias</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">categoria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subcategoria</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.obtener_subsubcategorias" title="Link to this definition"></a></dt>
+<dd><p>Obtiene las sub-subcategorías para una combinación de categoría
+y subcategoría.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>categoria</strong> (<em>str</em>) – Categoría seleccionada.</p></li>
+<li><p><strong>subcategoria</strong> (<em>str</em>) – Subcategoría seleccionada.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de sub-subcategorías.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.procesar_ingreso">
+<span class="sig-name descname"><span class="pre">procesar_ingreso</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">usuario</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.procesar_ingreso" title="Link to this definition"></a></dt>
+<dd><p>Procesa el ingreso del usuario comprobando validación y
+existencia en base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>usuario</strong> (<em>str</em>) – Nombre de usuario ingresado.</p></li>
+<li><p><strong>contraseña</strong> (<em>str</em>) – Contraseña ingresada.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ejemplo:
+&gt;&gt;&gt; app = AppGestion()
+&gt;&gt;&gt; app.procesar_ingreso(«mara123», «HOGAR»)
+(procesa login según lógica interna)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.procesar_registro">
+<span class="sig-name descname"><span class="pre">procesar_registro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">usuario</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contraseña</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.procesar_registro" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app_gestion2.AppGestion.refrescar_tabla_interfaz">
+<span class="sig-name descname"><span class="pre">refrescar_tabla_interfaz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">combo_filtro_propiedad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabla</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etiqueta_gasto</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_gestion2.AppGestion.refrescar_tabla_interfaz" title="Link to this definition"></a></dt>
+<dd><p>Refresca la tabla de movimientos .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>combo_filtro_propiedad</strong> (<em>ttk.Combobox</em>) – Combo para filtrar por propiedad.</p></li>
+<li><p><strong>tabla</strong> (<em>ttk.Treeview</em>) – Tabla donde se muestran los movimientos.</p></li>
+<li><p><strong>etiqueta_balance</strong> (<em>tk.Label</em>) – Etiqueta para mostrar total acumulado.</p></li>
+<li><p><strong>etiqueta_gasto</strong> (<em>tk.Label</em>) – Etiqueta para mostrar gasto mensual.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Proyecto App Documentación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="constantes.html" class="btn btn-neutral float-right" title="constantes module" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2026, Mara D.Levroni C..</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

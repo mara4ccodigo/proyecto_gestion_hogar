@@ -1,0 +1,3 @@
+Mensaje de log enviado desde cliente de prueba.
+Mensaje de log enviado desde cliente de prueba.
+Mensaje de log enviado desde cliente de prueba.
