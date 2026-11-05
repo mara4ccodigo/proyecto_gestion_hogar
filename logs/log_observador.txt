@@ -1,0 +1,2 @@
+2026-11-04 02:45:00 - Evento: Movimiento guardado: Almafuerte (SV), Impuestos, ARBA, importe: 170000.0
+2026-11-05 02:31:21 - Evento: Movimiento guardado: Avellaneda 266 (MG), Servicios, Telefonía Celular, importe: 26000.0

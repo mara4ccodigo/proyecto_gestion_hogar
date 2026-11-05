@@ -21,8 +21,10 @@ import threading
 
 HOST = "0.0.0.0"
 PORT = 9999
-RUTA_LOG_SERV = os.path.join(
-    os.path.dirname(__file__), "log_servidor_remoto.txt"
+
+RUTA_LOG_SERV = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'logs', 
+                 'log_servidor_remoto.txt')
 )
 
 

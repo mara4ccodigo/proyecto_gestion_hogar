@@ -17,7 +17,9 @@ Organización principal de los directorios y archivos del sistema:
 
 ```text
 proyecto_gestion_hogar/
+├── data/               # Archivos de base de datos SQLite3 (*.db)
 ├── docs/               # Documentación técnica generada con Sphinx
+├── logs/               # Archivos de logs generados y almacenados
 ├── src/                # Código fuente de la aplicación (MVC y utilidades)
 │   ├── db_manager.py       # Modelo: Conexión y gestión de la base de datos SQLite3
 │   ├── movimiento.py       # Modelo: Lógica y estructura de movimientos financieros
@@ -32,8 +34,7 @@ proyecto_gestion_hogar/
 │   └── ...                 # Otros archivos de utilidad o configuración
 ├── venv/               # Entorno virtual Python (no versionado)
 ├── README.md           # Documentación general y guía rápida
-├── requirements.txt    # Dependencias Python del proyecto
-└── registro_operaciones.txt # Logs locales generados por el decorador (no versionado)
+└── requirements.txt    # Dependencias Python del proyecto
 ```
 
 ---

@@ -1,3 +1,4 @@
 2026-11-04 02:44:31 - Llamada a función: guardar_movimiento
 2026-11-04 02:44:58 - Llamada a función: guardar_movimiento
 2026-11-04 02:45:17 - Llamada a función: eliminar_movimiento
+2026-11-05 02:30:56 - Llamada a función: guardar_movimiento

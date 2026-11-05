@@ -29,7 +29,10 @@ class Observable:
 
 
 class ObserverLog:
-    RUTA_LOG = os.path.join(os.path.dirname(__file__), "log_observador.txt")
+    RUTA_LOG = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), '..', 'logs', 
+                     'log_observador.txt')
+    )
 
     def actualizar(self, evento):
         ahora = datetime.now().isoformat(sep=' ', timespec='seconds')

@@ -7,7 +7,7 @@
 #   operaciones en la base de datos SQLite3, incluyendo creación de tablas 
 #   y CRUD que comence en el curso de Python Inicial.
 #=============================================================================
-
+import os
 import sqlite3
 from contextlib import contextmanager
 
@@ -24,13 +24,21 @@ class DBManager:
         eliminar_movimiento(id_movimiento): Elimina movimiento por id.
         actualizar_importe(id_movimiento, nuevo_importe): Actualiza importe.
     """
-    def __init__(self, ruta_db="gestion_hogar_v3.db"):
+
+    def __init__(self, ruta_db=None):
         """
         Inicializa el manejador de base de datos.
 
         Args:
             ruta_db (str): Ruta del archivo de la base de datos SQLite.
         """
+        if ruta_db is None:
+            ruta_db = os.path.abspath(os.path.join(os.path.dirname(__file__),
+                    '..',
+                    'data',
+                    'gestion_hogar_v3.db'
+                )
+            )
         self.ruta_db = ruta_db
 
     @contextmanager

@@ -14,8 +14,17 @@ import functools
 import os
 import socket
 
-RUTA_LOG = os.path.join(os.path.dirname(__file__), "registro_operaciones.txt")
-RUTA_LOG_ERRORES = os.path.join(os.path.dirname(__file__), "errores_log.txt")
+import os
+
+RUTA_LOG = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'logs', 
+                 'registro_operaciones.txt')
+)
+
+RUTA_LOG_ERRORES = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', 'logs', 'errores_log.txt')
+)
+
 
 # Configuración conexión servidor remoto de logs
 REMOTE_HOST = "192.168.1.53"  # Reemplazo por IP real de mi PC servidor
